@@ -1,7 +1,37 @@
+body {
+    background-image: linear-gradient(270deg,rgb(41, 133, 238),rgba(23, 46, 73, 0.925));
+}
 .wrapper {
-    margin: 5rem;
+    margin-top: 5rem!important;
+    padding: 5rem;
+    width: 50%;
+    height: 70vh;
+    background-color: rgb(232, 240, 247);
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.596);
 }
 
 .todoForm {
     padding: 5rem;
+}
+
+.showTasks {
+    margin-top: 2rem;
+    padding-top: 1.5rem!important;
+    height: 20vh;
+    text-align: left;
+    border-radius: 20px 20px 20px;
+    background-color: white;
+}
+
+.showTasks ul li {
+    list-style-type: none;
+}
+
+/* input:checked {
+    
+} */
+
+span.done-true {
+    color: grey;
+    text-decoration: line-through!important;
 }

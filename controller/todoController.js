@@ -5,8 +5,10 @@ app.controller('todoController',function($scope){
     $scope.tasks = [];
 
     $scope.addTask = function () {
-        // $scope.tasks.push($scope.todoList);
-        console.log($scope.tasks);
-        $scope.showTask = $scope.todoList;
+        if($scope.enteredTask != ''){
+            $scope.tasks.push({'taskGiven': $scope.enteredTask, 'status': false});
+            $scope.enteredTask = '';
+        }
+        
     }
 })
